@@ -67,6 +67,7 @@ header.black-bg{
   background-color: #151515;
   min-height: calc(100vh - 50px);
   color: white;
+  display: flex;
 }
 
 .hero-container{
