@@ -102,6 +102,7 @@ header.black-bg{
   cursor: pointer;
   height: 38px;
   width: 12vh;
+  width: auto;
 }
 
 .button-img{
