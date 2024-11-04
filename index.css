@@ -68,6 +68,7 @@ header.black-bg{
   background-color: #151515;
   min-height: calc(100vh - 50px);
   color: white;
+  width: 100%;
   display: flex;
 }
 
@@ -137,18 +138,21 @@ header.black-bg{
 
 
 .movie-list{
-  display: flex;
+ display: flex;
+  flex-direction: row;
   align-items: center;
+  overflow-x:auto;
+  overflow-y: hidden;
   height: 350px;
 }
 
 .movie-list-item{
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .movie-list-item:hover .movie-list-item-img{
   transform: scale(1.2);
-  margin: 0 15px;
+  margin: 0 10px;
   opacity: 1;
 }
 
@@ -162,18 +166,3 @@ header.black-bg{
 }
 
 
-
-.movie-list-item-button{
-  padding: 10px;
-  background-color: white;
-  color: black;
-  border-radius: 10px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  left: 100px;
-  opacity: 0;
-  margin-top: 100px;
-  transition: all 1s ease-in-out;
-}
